@@ -1,100 +1,69 @@
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #000;
-    color: white;
-    overflow-x: hidden;
-    text-align: center;
+margin:0;
+font-family:Arial, sans-serif;
+background:#000;
+color:white;
+text-align:center;
 }
 
 canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    pointer-events: none;
+position:fixed;
+top:0;
+left:0;
+z-index:-1;
 }
 
-/* HERO SECTION */
-
-.hero {
-    padding: 120px 20px;
+.container {
+width:90%;
+max-width:900px;
+margin:auto;
+padding:40px 0;
 }
 
-.logo {
-    width: 120px;
-    margin-bottom: 20px;
-}
-
-.title {
-    font-size: 60px;
-    font-weight: 800;
-    background: linear-gradient(90deg,#00f2ff,#00aaff,#0077ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    letter-spacing: 2px;
-}
-
-.tagline {
-    font-size: 28px;
-    margin-top: 20px;
-    color: #00eaff;
+.hero h1 {
+font-size:60px;
+background:linear-gradient(90deg,#00f0ff,#0066ff);
+-webkit-background-clip:text;
+color:transparent;
 }
 
 .subtitle {
-    font-size: 18px;
-    color: #bbb;
-    margin-top: 15px;
-}
-
-/* BUTTON */
-
-.btn {
-    display: inline-block;
-    margin-top: 40px;
-    padding: 18px 40px;
-    font-size: 18px;
-    border-radius: 40px;
-    background: linear-gradient(90deg,#00f2ff,#0077ff);
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s ease;
-}
-
-.btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px #00eaff;
-}
-
-/* GLASS SECTION */
-
-.section {
-    padding: 80px 20px;
+opacity:0.7;
+margin-bottom:30px;
 }
 
 .glass {
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    margin: 40px 20px;
+background:rgba(255,255,255,0.05);
+padding:40px;
+margin:40px 0;
+border-radius:20px;
+backdrop-filter:blur(10px);
 }
 
-.preview {
-    width: 80%;
-    max-width: 700px;
-    margin-top: 20px;
-    border-radius: 15px;
+.btn {
+display:inline-block;
+padding:15px 30px;
+background:linear-gradient(90deg,#00f0ff,#0066ff);
+border-radius:30px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+margin-top:20px;
 }
 
-.founder .ceo {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 15px;
+input, textarea {
+width:80%;
+padding:12px;
+margin:10px 0;
+border:none;
+border-radius:10px;
+}
+
+textarea {
+height:120px;
 }
 
 footer {
-    margin: 60px 0;
-    font-size: 14px;
-    color: #888;
+opacity:0.5;
+margin-top:40px;
 }
