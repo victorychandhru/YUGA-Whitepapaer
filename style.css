@@ -1,10 +1,11 @@
 body {
 margin:0;
+padding:0;
 font-family:'Segoe UI', sans-serif;
 background:#000;
-color:#00eaff;
-text-align:center;
 overflow-x:hidden;
+color:white;
+text-align:center;
 }
 
 canvas {
@@ -16,91 +17,105 @@ z-index:-1;
 
 .container {
 width:90%;
-max-width:1100px;
+max-width:1200px;
 margin:auto;
-padding:60px 0;
+padding:80px 0;
 }
 
+/* REMOVE ALL BACKGROUNDS COMPLETELY */
+section {
+background:transparent !important;
+box-shadow:none !important;
+border:none !important;
+outline:none !important;
+}
+
+/* LOGO */
 .logo {
-width:120px;
+width:110px;
 margin-bottom:20px;
 }
 
-.gradient {
-font-size:60px;
-background:linear-gradient(90deg,#00f0ff,#0077ff,#00eaff);
+/* FUTURISTIC GRADIENT TEXT */
+h1 {
+font-size:70px;
+background:linear-gradient(90deg,#00f0ff,#0066ff,#00ffee,#00aaff);
 -webkit-background-clip:text;
 color:transparent;
 margin:0;
 }
 
-h2, h3 {
-color:#00d9ff;
-}
-
-.subtitle {
-color:#00cfff;
-opacity:0.8;
-margin-bottom:30px;
-}
-
-/* REMOVE GLASS BACKGROUND */
-.glass {
-padding:60px 0;
-margin:60px 0;
-background:none;
-border:none;
-backdrop-filter:none;
-}
-
-/* Images float clean */
-.preview {
-width:100%;
-max-width:750px;
-border-radius:20px;
-margin-top:20px;
-box-shadow:0 0 40px rgba(0,255,255,0.3);
-}
-
-.ceo {
-width:180px;
-border-radius:50%;
+h2 {
+font-size:38px;
+background:linear-gradient(90deg,#00eaff,#00aaff);
+-webkit-background-clip:text;
+color:transparent;
 margin-bottom:20px;
-box-shadow:0 0 30px rgba(0,255,255,0.4);
 }
 
+h3 {
+background:linear-gradient(90deg,#00ffee,#0077ff);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+p, li {
+color:#00d9ff;
+font-size:18px;
+}
+
+/* BUTTONS */
 .btn {
 display:inline-block;
-padding:15px 30px;
+padding:16px 36px;
 background:linear-gradient(90deg,#00f0ff,#0077ff);
-border-radius:30px;
+border-radius:40px;
 color:white;
 text-decoration:none;
 font-weight:bold;
-margin:10px;
-box-shadow:0 0 20px rgba(0,255,255,0.5);
+margin:12px;
+box-shadow:0 0 25px rgba(0,255,255,0.6);
+transition:0.3s;
 }
 
-.secondary {
-background:linear-gradient(90deg,#00cfff,#0044ff);
+.btn:hover {
+transform:scale(1.05);
 }
 
+/* IMAGES FLOAT CLEAN */
+.preview {
+width:100%;
+max-width:800px;
+margin-top:30px;
+border-radius:20px;
+box-shadow:none;
+background:none;
+}
+
+.ceo {
+width:200px;
+border-radius:50%;
+margin:30px 0;
+box-shadow:none;
+}
+
+/* FORM */
 input, textarea {
-width:80%;
-padding:12px;
-margin:10px 0;
+width:85%;
+padding:14px;
+margin:12px 0;
 border:none;
-border-radius:10px;
+border-radius:12px;
 background:rgba(0,255,255,0.08);
 color:#00f0ff;
 }
 
 textarea {
-height:120px;
+height:140px;
 }
 
 footer {
-color:#00cfff;
+margin-top:80px;
+color:#00aaff;
 opacity:0.6;
-margin-top:60px;
 }
