@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', sans-serif;
+    background: black;
+    color: white;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero {
+    text-align: center;
+    padding: 180px 20px;
+}
+
+.logo {
+    width: 260px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 54px;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #00eaff;
+    margin-top: 10px;
+}
+
+.subtitle {
+    font-size: 20px;
+    opacity: 0.8;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 16px 40px;
+    background: linear-gradient(90deg, #00eaff, #0077ff);
+    color: black;
+    border-radius: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.section {
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.glass {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin: 60px auto;
+    width: 85%;
+    padding: 80px 40px;
+}
+
+.preview {
+    width: 80%;
+    margin-top: 40px;
+    border-radius: 12px;
+}
+
+.founder .ceo {
+    width: 160px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 60px;
+    opacity: 0.5;
+}
