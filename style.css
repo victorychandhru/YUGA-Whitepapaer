@@ -1,9 +1,10 @@
 body {
     margin: 0;
-    overflow-x: hidden;
     font-family: 'Segoe UI', sans-serif;
-    background: black;
+    background: #000;
     color: white;
+    overflow-x: hidden;
+    text-align: center;
 }
 
 canvas {
@@ -11,83 +12,89 @@ canvas {
     top: 0;
     left: 0;
     z-index: -1;
+    pointer-events: none;
 }
 
-.content {
-    position: relative;
-    z-index: 1;
-}
+/* HERO SECTION */
 
 .hero {
-    text-align: center;
-    padding: 180px 20px;
+    padding: 120px 20px;
 }
 
 .logo {
-    width: 260px;
-    margin-bottom: 30px;
+    width: 120px;
+    margin-bottom: 20px;
 }
 
-h1 {
-    font-size: 54px;
+.title {
+    font-size: 60px;
+    font-weight: 800;
+    background: linear-gradient(90deg,#00f2ff,#00aaff,#0077ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     letter-spacing: 2px;
 }
 
-h2 {
+.tagline {
+    font-size: 28px;
+    margin-top: 20px;
     color: #00eaff;
-    margin-top: 10px;
 }
 
 .subtitle {
-    font-size: 20px;
-    opacity: 0.8;
-    margin-top: 20px;
+    font-size: 18px;
+    color: #bbb;
+    margin-top: 15px;
 }
+
+/* BUTTON */
 
 .btn {
     display: inline-block;
     margin-top: 40px;
-    padding: 16px 40px;
-    background: linear-gradient(90deg, #00eaff, #0077ff);
-    color: black;
+    padding: 18px 40px;
+    font-size: 18px;
     border-radius: 40px;
-    font-weight: bold;
+    background: linear-gradient(90deg,#00f2ff,#0077ff);
+    color: white;
     text-decoration: none;
+    font-weight: bold;
     transition: 0.3s ease;
 }
 
 .btn:hover {
     transform: scale(1.05);
+    box-shadow: 0 0 25px #00eaff;
 }
 
+/* GLASS SECTION */
+
 .section {
-    padding: 120px 20px;
-    text-align: center;
+    padding: 80px 20px;
 }
 
 .glass {
     background: rgba(255,255,255,0.05);
     backdrop-filter: blur(10px);
     border-radius: 20px;
-    margin: 60px auto;
-    width: 85%;
-    padding: 80px 40px;
+    margin: 40px 20px;
 }
 
 .preview {
     width: 80%;
-    margin-top: 40px;
-    border-radius: 12px;
+    max-width: 700px;
+    margin-top: 20px;
+    border-radius: 15px;
 }
 
 .founder .ceo {
-    width: 160px;
+    width: 150px;
     border-radius: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 footer {
-    text-align: center;
-    padding: 60px;
-    opacity: 0.5;
+    margin: 60px 0;
+    font-size: 14px;
+    color: #888;
 }
